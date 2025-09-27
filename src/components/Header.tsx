@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
+import ngLogo from "@/assets/ng-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,11 +16,13 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold">🏠</span>
-          </div>
-          <span className="text-xl font-bold text-foreground">Mayank Real Estate</span>
+        <div className="flex items-center space-x-3">
+          <img 
+            src={ngLogo} 
+            alt="NG Estates Logo" 
+            className="h-10 w-auto"
+          />
+          <span className="text-xl font-bold text-foreground">Nanda Gokula Estates</span>
         </div>
 
         {/* Desktop Navigation */}

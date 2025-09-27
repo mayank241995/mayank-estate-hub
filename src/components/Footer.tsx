@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
           {/* Copyright */}
           <div className="text-white/80">
-            <p>&copy; 2025 Mayank Real Estate. All rights reserved.</p>
+            <p>&copy; 2025 Nanda Gokula Estates. All rights reserved.</p>
           </div>
 
           {/* Social Links */}
