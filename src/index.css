@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Real Estate Website Design System - Luxury & Professional */
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 0 0% 100%;
+    --foreground: 220 20% 15%;
+
+    /* Card colors */
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+
+    /* Popover colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+
+    /* Primary - Luxury Gold */
+    --primary: 45 100% 51%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 45 100% 47%;
+
+    /* Secondary - Navy Blue */
+    --secondary: 220 35% 15%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Success - Property Price Green */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    /* Muted colors */
+    --muted: 220 13% 96%;
+    --muted-foreground: 220 13% 45%;
+
+    /* Accent colors */
+    --accent: 220 13% 96%;
+    --accent-foreground: 220 20% 15%;
+
+    /* Destructive colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border and input */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 45 100% 51%;
+
+    /* Navy gradient for sections */
+    --navy-gradient: linear-gradient(135deg, hsl(220 35% 15%), hsl(220 35% 18%));
+    
+    /* Gold gradient for buttons */
+    --gold-gradient: linear-gradient(135deg, hsl(45 100% 51%), hsl(45 100% 55%));
+    
+    /* Property card shadow */
+    --property-shadow: 0 4px 20px hsl(220 35% 15% / 0.1);
+    --property-shadow-hover: 0 8px 30px hsl(220 35% 15% / 0.2);
+    
+    /* Elegant transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    /* Sidebar colors - keeping for compatibility */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Base colors for dark mode */
+    --background: 220 35% 8%;
+    --foreground: 0 0% 95%;
+
+    /* Card colors */
+    --card: 220 35% 12%;
+    --card-foreground: 0 0% 95%;
+
+    /* Popover colors */
+    --popover: 220 35% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    /* Primary - Gold remains same in dark */
+    --primary: 45 100% 51%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 45 100% 47%;
+
+    /* Secondary - Lighter navy for dark mode */
+    --secondary: 220 35% 20%;
+    --secondary-foreground: 0 0% 95%;
+
+    /* Success - Slightly adjusted for dark */
+    --success: 142 76% 40%;
+    --success-foreground: 0 0% 100%;
+
+    /* Muted colors */
+    --muted: 220 35% 15%;
+    --muted-foreground: 220 13% 65%;
+
+    /* Accent colors */
+    --accent: 220 35% 15%;
+    --accent-foreground: 0 0% 95%;
+
+    /* Destructive colors */
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border and input */
+    --border: 220 35% 20%;
+    --input: 220 35% 20%;
+    --ring: 45 100% 51%;
+
+    /* Dark mode gradients */
+    --navy-gradient: linear-gradient(135deg, hsl(220 35% 12%), hsl(220 35% 15%));
+    --gold-gradient: linear-gradient(135deg, hsl(45 100% 51%), hsl(45 100% 55%));
+    
+    /* Adjusted shadows for dark mode */
+    --property-shadow: 0 4px 20px hsl(0 0% 0% / 0.3);
+    --property-shadow-hover: 0 8px 30px hsl(0 0% 0% / 0.4);
+
+    /* Sidebar colors for dark mode */
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  /* Hero section styles */
+  .hero-gradient {
+    background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+  }
+  
+  /* Property card hover effects */
+  .property-card {
+    @apply transition-all duration-300 hover:shadow-2xl hover:scale-105;
+    box-shadow: var(--property-shadow);
+  }
+  
+  .property-card:hover {
+    box-shadow: var(--property-shadow-hover);
+  }
+  
+  /* Gold button gradient */
+  .btn-gold {
+    background: var(--gold-gradient);
+    @apply transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5;
+  }
+  
+  /* Navy section background */
+  .navy-section {
+    background: var(--navy-gradient);
+  }
+  
+  /* Floating buttons */
+  .floating-btn {
+    @apply fixed z-50 w-14 h-14 rounded-full shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl;
+  }
+  
+  /* Testimonial card */
+  .testimonial-card {
+    @apply bg-white rounded-xl p-6 shadow-lg transition-all duration-300 hover:shadow-xl;
+  }
+}
