@@ -15,11 +15,11 @@ const FloatingButtons = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col space-y-4">
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
       {/* Call Button */}
       <button
         onClick={handleCall}
-        className="floating-btn bg-blue-500 hover:bg-blue-600 text-white"
+        className="w-14 h-14 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl flex items-center justify-center"
         aria-label="Call us"
       >
         <Phone className="w-6 h-6" />
@@ -28,7 +28,7 @@ const FloatingButtons = () => {
       {/* WhatsApp Button */}
       <button
         onClick={handleWhatsApp}
-        className="floating-btn bg-green-500 hover:bg-green-600 text-white"
+        className="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-xl transition-all duration-300 hover:scale-110 hover:shadow-2xl flex items-center justify-center"
         aria-label="WhatsApp us"
       >
         <MessageCircle className="w-6 h-6" />
