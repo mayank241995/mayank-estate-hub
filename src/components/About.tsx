@@ -24,13 +24,21 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            About <span className="text-primary">Mayank Real Estate</span>
+            About <span className="text-primary">Nanda Gokula Estates</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            With over a decade of experience in the real estate industry, we have established ourselves 
-            as a trusted partner for property buyers, sellers, and investors. Our commitment to excellence 
-            and personalized service has helped thousands of families find their dream homes.
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6">
+            Discover your dream plot at Nandagokula Estates—a luxury residential oasis in Bangalore. 
+            Our meticulously planned community offers prime plots designed for those seeking peaceful 
+            living with modern amenities and convenient connectivity.
           </p>
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-2xl font-semibold text-foreground mb-4">Premium Plots for Sale in Bangalore</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              We offer carefully curated plots in various sizes and configurations to suit your unique vision. 
+              From cozy family homes to sprawling estates, our eco-friendly community combines luxury with 
+              sustainability, ensuring your investment contributes to both comfort and a greener future.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
