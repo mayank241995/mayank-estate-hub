@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import MapComponent from "./MapComponent";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -61,13 +62,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Map Section */}
           <div className="space-y-8">
-            <div className="bg-muted/50 rounded-xl p-8 h-96 flex items-center justify-center">
-              <div className="text-center text-muted-foreground">
-                <MapPin className="w-16 h-16 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">Visit Our Office</h3>
-                <p>Interactive map will be integrated here</p>
-              </div>
-            </div>
+            <MapComponent />
 
             {/* Contact Info */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -77,7 +72,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">Call Us</h4>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground">+91 8548001234</p>
                 </div>
               </div>
 
@@ -87,7 +82,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">Email Us</h4>
-                  <p className="text-muted-foreground">info@mayankrealestate.com</p>
+                  <p className="text-muted-foreground">nandagokulaestates2022@gmail.com</p>
                 </div>
               </div>
 
@@ -97,7 +92,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">Visit Us</h4>
-                  <p className="text-muted-foreground">123 Real Estate Ave, City</p>
+                  <p className="text-muted-foreground">Bangalore, Karnataka</p>
                 </div>
               </div>
 
